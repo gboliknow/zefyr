@@ -225,7 +225,7 @@ class EditorTextSelectionOverlay {
     _value = newValue;
     if (SchedulerBinding.instance?.schedulerPhase ==
         SchedulerPhase.persistentCallbacks) {
-      SchedulerBinding.instance??.addPostFrameCallback(_markNeedsBuild);
+      SchedulerBinding.instance?.addPostFrameCallback(_markNeedsBuild);
     } else {
       _markNeedsBuild();
     }
