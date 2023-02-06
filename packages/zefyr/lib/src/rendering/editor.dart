@@ -997,8 +997,7 @@ class RenderEditor extends RenderEditableContainerBox
   }
 }
 
-class ZefyrVerticalCaretMovementRun
-    extends BidirectionalIterator<TextPosition> {
+class ZefyrVerticalCaretMovementRun extends Iterator<TextPosition> {
   ZefyrVerticalCaretMovementRun._(
     this._editor,
     this._currentTextPosition,
