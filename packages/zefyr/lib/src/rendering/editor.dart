@@ -1017,7 +1017,6 @@ class ZefyrVerticalCaretMovementRun extends Iterator<TextPosition> {
     return true;
   }
 
-  @override
   bool movePrevious() {
     _currentTextPosition = _editor.getTextPositionAbove(_currentTextPosition);
     return true;
